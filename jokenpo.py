@@ -12,10 +12,31 @@ while True:
     print("1 - Pedra", (PEDRA))
     print("2 - Papel", (PAPEL))
     print("3 - Tesoura", (TESOURA))
-    print("0 - Sair do jogo")
+    print("0 - Quit Game")
 
-    print("----Loading-----")
+    print("----Loading ... ... ...-----")
 
+    
+    pc = random.choice([PEDRA, PAPEL, TESOURA])
+    
+    print("\nVocê: ",(jogada))
+    print("Computador:", (pc))
+    
+    
+    match (jogada, pc):
+        
+        case (jog1, jog2) if jog1 == jog2:
+            print("Empate! 🤝")
+            
+        
+        case ("✊", "✌️") | ("✋", "✊") | ("✌️", "✋"):
+            print("Deu Green! ")
+            
+        
+        case _:
+            print("Levou Fumo")
+
+            
     escolha_usuario = input("Digite o número da sua opção: ")
     
     
@@ -33,22 +54,3 @@ while True:
             print("Opção inválida! Tente novamente.")
             continue  
 
-    
-    pc = random.choice([PEDRA, PAPEL, TESOURA])
-    
-    print("\nVocê: ",(jogada))
-    print("Computador:", (pc))
-    
-    
-    match (jogada, pc):
-        
-        case (jog1, jog2) if jog1 == jog2:
-            print("Empate! 🤝")
-            
-        
-        case ("✊", "✌️") | ("✋", "✊") | ("✌️", "✋"):
-            print("Você venceu! ")
-            
-        
-        case _:
-            print("Você Perdeu")
