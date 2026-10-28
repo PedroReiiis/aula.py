@@ -19,6 +19,25 @@ while True:
     
     pc = random.choice([PEDRA, PAPEL, TESOURA])
     
+
+            
+    escolha_usuario = input("Digite o número da sua opção: ")
+    
+    
+    match escolha_usuario:
+        case "1":
+            jogada = PEDRA
+        case "2":
+            jogada = PAPEL
+        case "3":
+            jogada = TESOURA
+        case "0":
+            print("Obrigado por jogar! Até logo! ")
+            break  
+        case _:
+            print("Opção inválida! Tente novamente.")
+            continue  
+
     print("\nVocê: ",(jogada))
     print("Computador:", (pc))
     
@@ -35,22 +54,3 @@ while True:
         
         case _:
             print("Levou Fumo")
-
-            
-    escolha_usuario = input("Digite o número da sua opção: ")
-    
-    
-    match escolha_usuario:
-        case "1":
-            jogada = PEDRA
-        case "2":
-            jogada = PAPEL
-        case "3":
-            jogada = TESOURA
-        case "0":
-            print("Obrigado por jogar! Até logo! 👋")
-            break  
-        case _:
-            print("Opção inválida! Tente novamente.")
-            continue  
-
