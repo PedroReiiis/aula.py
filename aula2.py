@@ -1,34 +1,34 @@
-contador = 1
-while contador <= 10:
-    print(contador)
-    contador += 1
+# contador = 1
+# while contador <= 10:
+#     print(contador)
+#     contador += 1
 
-print("------------------------")
+# print("------------------------")
 
-regressivo = int(input("Digite um número: "))
-while regressivo >= 1:
-    print(regressivo)
-    regressivo -= 1
+# regressivo = int(input("Digite um número: "))
+# while regressivo >= 1:
+#     print(regressivo)
+#     regressivo -= 1
 
-print("------------------------")
+# print("------------------------")
 
-soma = 0 
-n = int(input("0 sai? "))
+# soma = 0 
+# n = int(input("0 sai? "))
 
-while n != 0:
-    soma += n
-    n = int(input("0 sai? "))
+# while n != 0:
+#     soma += n
+#     n = int(input("0 sai? "))
 
-print("A soma dos números digitados é:", soma)
+# print("A soma dos números digitados é:", soma)
 
-print('------------------------')
+# print('------------------------')
 
-senha = 1234
-senha_digitada = int(input("Digite a senha: "))
-while senha_digitada != senha:
-    print("Senha incorreta!")
-    senha_digitada = int(input("Digite a senha: "))
-    print("pode entrar!")
+# senha = 1234
+# senha_digitada = int(input("Digite a senha: "))
+# while senha_digitada != senha:
+#     print("Senha incorreta!")
+#     senha_digitada = int(input("Digite a senha: "))
+#     print("pode entrar!")
 
 print('------------------------')
 
@@ -51,8 +51,9 @@ match escolha:
     case "8":
      print("Agosto")    
     case _ :
-     print("Acabou o Mês")
+     print("nunb invalid")
 
+     
 print('------------------------')
 
 calculadora = input("Digite a operação desejada (+, -, *, /): ")
